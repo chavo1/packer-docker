@@ -1,4 +1,6 @@
-# Usage example:
+#  Building Docker image with Packer and test with kitchen
+
+## Usage example:
 
 1.  Fork the copy of chavo1/packer-docker
 2.  Clone it with following :
@@ -31,8 +33,8 @@ sudo packer build /tmp/docker.json
 
 ```
 
-The command in point 6 will create tag and upload it to Docker HUB
-If you need to test this particular tag with with kitchen you can do that as follow:
+ - The command in point 6 will create tag and upload it to Docker HUB
+ - If you need to test this particular tag with kitchen for "nginx" you can do that as follow:
 
 ```
 kitchen converge
