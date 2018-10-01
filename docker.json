@@ -9,7 +9,7 @@
       {
         "type": "docker-tag",
         "repository": "chavo/packer",
-        "tag": "0.0.3",
+        "tag": "0.0.1",
         "force":"true"
       },
       {
