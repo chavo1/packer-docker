@@ -32,3 +32,15 @@ sudo packer build /tmp/docker.json
 ```
 
 The command in point 6 will create tag and upload it to Docker HUB
+If you need to test this particular tag with with kitchen you can do that as follow:
+
+```
+kitchen converge
+kitchen verify
+kitchen destroy
+```
+Or
+
+```
+kitchen test
+```
