@@ -4,3 +4,4 @@ output-*/
 *.iso
 .DS_Store
 .vagrant/
+.kitchen/

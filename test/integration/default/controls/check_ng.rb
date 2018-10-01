@@ -5,3 +5,4 @@ control 'check_nginx' do
   end
 
 end
+
