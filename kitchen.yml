@@ -2,17 +2,18 @@
 driver:
   name: docker
   provision_command: mkdir -p /run/sshd
+
+provisioner:
+  name: shell
+
 verifier:
   name: inspec
-  systems:
-    - name: default
-      backend: ssh
-      key_files:
-        - ~/.ssh/id_rsa
+
 platforms:
   - name: ubuntu
     driver_config:
       image: chavo/packer:0.0.2
+      platform: ubuntu
 
 suites:
   - name: default
