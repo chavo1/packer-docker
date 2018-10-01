@@ -12,7 +12,7 @@ verifier:
 platforms:
   - name: ubuntu
     driver_config:
-      image: chavo/packer:0.0.1
+      image: chavo/packer:0.0.2
 
 suites:
   - name: default
