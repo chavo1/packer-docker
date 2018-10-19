@@ -1,4 +1,4 @@
-#  Building Docker image with Packer and test with kitchen
+#  Building Docker image with [Packer](https://www.packer.io/) and test with [Kitchen](https://kitchen.ci/)
 
 ## Usage example:
 
@@ -12,7 +12,7 @@ git clone git@github.com:chavo1/packer-docker.git
 ```
 
 3. "vagrant up"
-4.  "vagrant ssh"
+4. "vagrant ssh"
 5.  Login to your account in [Docker Hub](https://hub.docker.com/) from CLI. If you have no account just create one.
 
 ```
@@ -25,16 +25,21 @@ If the login is succefull you should see:
 Login Succeeded
 ```
 
-6. To build with packer use a following command
+6. To build with packer use a following command:
 
 ```
 
 sudo packer build /tmp/docker.json
 
 ```
-
  - The command in point 6 will create tag and upload it to Docker HUB
- - If you need to test this particular tag with kitchen for "nginx" you can do that as follow:
+
+7. After the bulding process exit and if you need to test this particular tag with kitchen for "nginx" be sure you have installed a following gems:
+ ```
+gem install kitchen-docker
+gem install kitchen-inspec
+ ```
+Than just execute:
 
 ```
 kitchen converge
