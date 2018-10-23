@@ -29,7 +29,7 @@ Login Succeeded
 
 ```
 
-sudo packer build /tmp/docker.json
+sudo packer build /vagrant/docker.json
 
 ```
  - The command in point 6 will create tag and upload it to Docker HUB
